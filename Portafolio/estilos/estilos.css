@@ -1,0 +1,441 @@
+*{
+   margin: 0;
+   padding: 0;
+}
+
+html{
+  scroll-behavior: smooth;
+   
+  
+}
+
+body{
+    background-color: #000000;
+}
+
+
+.header-content{
+    
+    background-image: url(../img/pexels-jerry-wang-3768652.jpg);
+    background-repeat: no-repeat ;
+    background-size : cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: colum;
+    align-items: center;
+    justify-content: start;
+    border-end-start-radius: 10rem;
+    
+}
+
+.header-ul{
+    display: flex;
+    gap: 3rem;
+    color: blanchedalmond;
+    list-style-type: none;
+    font-family: 'montaga';
+}
+
+
+.logo{
+    width: 30rem;
+    padding: 1rem;
+    margin: 1rem;
+    
+    
+}
+
+.section-content{
+    margin-top: 10rem;
+    margin-left: 2rem;
+    padding-top: 3rem;
+    
+}
+
+
+
+.columnas-content{
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    padding-top: 2rem;
+    grid-gap: 5rem  ;   
+    margin-left: 2rem;
+    margin-top: 10rem;
+
+}
+
+
+
+.section-li{
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 25px;
+    list-style-type:none;
+    text-align: center;
+    font-family:'montaga';
+    color: white;
+   
+
+}
+
+
+
+.imgaduana{
+    width: 30rem;
+    height: 30rem;
+    border-radius: 50%;
+    box-shadow: 0px 0px 40px rgb(225, 0, 191);
+    
+}
+.imgaduana:hover{
+    transition: transform 0.9s ease;
+    transform: scale(1.1);
+}
+
+
+a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    border: none;
+    background: none;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  a::before {
+    margin-left: auto;
+  }
+  
+  a::after, a::before {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #ff0368;
+    display: block;
+    transition: 0.5s;
+   
+  }
+  
+  a:hover::after, a:hover::before {
+    width: 100%;
+  }
+
+
+  h2{
+    border: solid 2px  white ;
+    display: inline-block;
+    padding: 5px;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    font-family: 'Orbitron';
+    color: white;
+  }
+
+ .sec_general{
+    margin-top: 20rem;
+    margin-right: 2rem;
+    text-align: end;
+ }
+
+.hr-a{
+    margin-right: 2.5rem;
+    color: white;
+}
+
+.hr{
+    margin-left: 2.5rem;
+    color: white;
+}
+
+.hr-3{
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    color: white;
+}
+
+ .adicionales-ul{
+    
+    margin-top: 5rem;
+    max-width: 500px;
+    
+ }
+
+ .adicionales-li{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+    list-style-type:none;
+    color: white;
+ }
+
+ .contenedor{
+    display: flex;
+    justify-content:space-around;
+    
+    
+ }
+
+@keyframes pulse{
+    0% {
+        box-shadow: 0 0 10px rgb(132, 0, 112);
+      }
+      50% {
+        box-shadow: 0 0 20px rgb(132, 0, 112);
+      }
+      100% {
+        box-shadow: 0 0 10px rgb(132, 0, 112);
+      }
+}
+
+ .imagen-barco{
+    width: 31rem;
+    height: 31rem;
+    border-radius: 50%;
+    margin-top: 6rem;
+    object-fit: cover;
+    box-shadow: 0px 0px 40px rgb(225, 0, 191);
+    
+ }
+
+ .imagen-barco:hover{
+    transition: transform 0.9s ease;
+    transform: scale(1.1);
+ }
+
+.temp_fisc{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.cont-uls{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5rem;
+    
+}
+
+.ul-3{
+    list-style-type: none;
+}
+
+.li-3{
+    margin-bottom: 15px;
+    font-family:'montaga';
+    font-size: 20px;
+    max-width: 25rem;
+    color: white;
+
+}
+
+.logro_container{
+    display: flex;
+    justify-content: space-around;
+    text-align:center;
+    margin-top: 10rem;
+}
+
+.logro_img{
+    border-radius: 50%;
+    width: 8rem;
+    transition: transform 1s ease;
+}
+
+.logro_img:hover{
+    transform:rotateY(180deg);
+}
+
+.porque_elejirnos{
+    margin-top: 7rem;
+}
+
+.parrafos_logros{
+    max-width: 25rem;
+    margin-top: 2rem;
+    font-size: 20px;
+    color: white;
+}
+
+.porque{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.contenedor {
+    margin-top: 10rem;
+    position: relative; /* Para que los elementos secundarios se posicionen con respecto a este contenedor */
+    width: 100%; /* Ancho del contenedor al 100% del contenedor padre */
+    height: 100vh; /* Altura del contenedor al 100% de la ventana gráfica del navegador */
+    overflow: hidden; /* Evita desbordamiento de la imagen superpuesta */
+    
+  }
+  
+  /* Estilo para el fondo */
+  .fondo {
+    background-attachment: fixed;
+    position: absolute; /* Para que el fondo se posicione en relación con el contenedor */
+    width: 100%; /* Ancho del fondo al 100% del contenedor */
+    height: 80%; /* Altura del fondo al 100% del contenedor */
+    background-image: url('../img/atardecer.jpg'); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Escala la imagen de fondo para llenar el contenedor */
+    z-index: -1; /* Coloca el fondo detrás de otros elementos */
+    
+  }
+  
+  /* Estilo para la imagen superpuesta */
+  .imagen-superpuesta {
+    position: relative; /* Para que la imagen superpuesta se posicione en relación con el contenedor */
+    width: 50%; /* Ancho de la imagen superpuesta, ajusta según lo necesites */
+    z-index: 1; /* Coloca la imagen superpuesta delante del fondo */
+    /* Puedes ajustar la posición de la imagen superpuesta según tus necesidades */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); /* Centra la imagen superpuesta en el contenedor */
+    box-shadow:  0px 0px 30px rgb(0, 0, 0);
+    border: solid 1px;
+    
+}
+
+  
+
+  .freight-title{
+    text-align:center;
+  }
+
+  .freight-article{
+    margin-top: 10rem;
+    display: flex;
+    justify-content: space-evenly;
+
+  }
+
+  .freight-ul{
+    max-width: 25rem;
+    list-style-type: none;
+    text-align: center;
+  }
+
+  .freight-li{
+    margin-bottom: 1.8rem;
+    font-size: 20px;
+    font-family:'montaga';
+    color: white;
+  }
+
+  .imagen-freight{
+    width: 30rem;
+    height: 30rem;
+    border-radius:  50%;
+    object-fit: cover;
+    box-shadow: 0px 0px 40px rgb(225, 0, 191);
+    
+  }
+
+  .imagen-freight:hover{
+    transition: transform 0.9s ease;
+    transform: scale(1.1);
+  }
+
+
+
+
+  .nosotros-article{
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   margin: 5rem;
+   gap: 10rem;
+  }
+
+  
+
+  .conteiner-nosotros{
+    margin-top: 7rem;
+  }
+
+
+  .parrafos-nosotros{
+    font-size: 20px;
+    font-family:'montaga';
+    color: white;
+    text-align: center;
+    line-height: 1.5em;
+  }
+
+  h3{
+    color: #ff0368;
+    text-align: center;
+    padding: 1rem;
+    
+  }
+
+  .nosotros-h2{
+    margin-left: 2.5rem;
+  }
+
+  .parrafo1{
+    margin-top: 7rem;
+  }
+
+  
+
+  .parrafo3{
+    margin-top: 7rem;
+  }
+
+  
+
+
+
+.section-contacto{
+  margin-top: 8rem;
+}
+
+
+.div-contacto{
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.content-icons{
+  display: flex;
+  flex-direction: colum;
+  align-items: center; 
+}
+
+.a-content{
+  margin-left: 10rem;
+  margin-top: 5rem;
+  width: 3rem;
+  height: 3rem;
+}
+
+.imgWsp{
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+
+.imgWsp:hover{
+  transition: transform 0.1s ease;
+  transform: rotate3d(1 , 1, 0, 45deg);
+}
+
+
+.maps{
+  margin-left: 16rem;
+  margin-top: 5rem;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 40px rgb(225, 0, 191);
+}
+
+.ultimohr{
+  margin-top: 6rem;
+}
+
+
+
